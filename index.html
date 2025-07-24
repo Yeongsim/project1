@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Halifax</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght=300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 8px;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50%; /* Underline half the width */
+            height: 3px;
+            background-color: #007bff; /* Blue underline */
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-blue-600 to-blue-800 text-white shadow-lg py-6 px-4 md:px-8 rounded-b-lg">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-4xl font-bold mb-2 md:mb-0">Discover Halifax</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#attractions" class="hover:text-blue-200 transition duration-300">Attractions</a></li>
+                    <li><a href="#food" class="hover:text-blue-200 transition duration-300">Food & Drink</a></li>
+                    <li><a href="#outdoors" class="hover:text-blue-200 transition duration-300">Outdoors</a></li>
+                    <li><a href="#contact" class="hover:text-blue-200 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-cover bg-center h-96 flex items-center justify-center text-white"
+        style="background-image: url('https://source.unsplash.com/random/1200x600/?halifax,cityscape');">
+        <div class="absolute inset-0 bg-black opacity-50 rounded-lg"></div>
+        <div class="relative z-10 text-center p-4">
+            <h2 class="text-5xl font-extrabold mb-4 drop-shadow-lg">Explore the Charm of Halifax</h2>
+            <p class="text-xl md:text-2xl font-light">Your guide to the best of Nova Scotia's capital city.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-6 md:p-8">
+
+        <!-- Attractions Section -->
+        <section id="attractions" class="mb-12">
+            <h3 class="text-4xl font-semibold mb-8 section-title text-blue-700">Top Attractions</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Attraction Card 1: Halifax Waterfront -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://source.unsplash.com/random/600x400/?halifax,waterfront" alt="Halifax Waterfront" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-2xl font-bold mb-2 text-gray-900">Halifax Waterfront</h4>
+                        <p class="text-gray-700 mb-4">Stroll along the vibrant boardwalk, enjoy street performers, grab a bite, and visit unique shops. It's the heart of the city's summer activity.</p>
+                        <a href="#" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Attraction Card 2: Citadel Hill -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://source.unsplash.com/random/600x400/?citadel,hill,halifax" alt="Citadel Hill" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-2xl font-bold mb-2 text-gray-900">Citadel Hill National Historic Site</h4>
+                        <p class="text-gray-700 mb-4">Step back in time at this historic fort offering panoramic views of the city and harbour. Don't miss the noon gun!</p>
+                        <a href="#" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Attraction Card 3: Public Gardens -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://source.unsplash.com/random/600x400/?halifax,gardens,park" alt="Halifax Public Gardens" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-2xl font-bold mb-2 text-gray-900">Halifax Public Gardens</h4>
+                        <p class="text-gray-700 mb-4">A Victorian-era garden oasis in the heart of the city, perfect for a relaxing walk amidst beautiful flora and fountains.</p>
+                        <a href="#" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Attraction Card 4: Maritime Museum -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://source.unsplash.com/random/600x400/?maritime,museum,halifax" alt="Maritime Museum of the Atlantic" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-2xl font-bold mb-2 text-gray-900">Maritime Museum of the Atlantic</h4>
+                        <p class="text-gray-700 mb-4">Explore Nova Scotia's rich maritime history, including exhibits on the Titanic and the Halifax Explosion.</p>
+                        <a href="#" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Attraction Card 5: Peggy's Cove -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://source.unsplash.com/random/600x400/?peggys,cove,lighthouse" alt="Peggy's Cove" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-2xl font-bold mb-2 text-gray-900">Peggy's Cove (Day Trip)</h4>
+                        <p class="text-gray-700 mb-4">A picturesque fishing village with an iconic lighthouse, just an hour's drive from Halifax. A must-see!</p>
+                        <a href="#" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Attraction Card 6: Art Gallery of Nova Scotia -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://source.unsplash.com/random/600x400/?art,gallery,nova,scotia" alt="Art Gallery of Nova Scotia" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-2xl font-bold mb-2 text-gray-900">Art Gallery of Nova Scotia</h4>
+                        <p class="text-gray-700 mb-4">Discover regional, national, and international art collections, including the Maud Lewis House exhibit.</p>
+                        <a href="#" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Food & Drink Section -->
+        <section id="food" class="mb-12">
+            <h3 class="text-4xl font-semibold mb-8 section-title text-blue-700">Food & Drink</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-6 transform hover:scale-105 transition duration-300">
+                    <h4 class="text-2xl font-bold mb-2 text-gray-900">Seafood Delights</h4>
+                    <p class="text-gray-700 mb-4">Halifax is renowned for its fresh seafood. Don't leave without trying the lobster, scallops, and famous fish and chips. Head to the waterfront for many great options!</p>
+                    <img src="https://source.unsplash.com/random/600x300/?halifax,seafood,lobster" alt="Seafood" class="w-full h-48 object-cover rounded-md mt-4">
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6 transform hover:scale-105 transition duration-300">
+                    <h4 class="text-2xl font-bold mb-2 text-gray-900">The Donair</h4>
+                    <p class="text-gray-700 mb-4">A Halifax original! This sweet and savory meat wrap is a must-try late-night snack. Find it at many pizza shops around the city.</p>
+                    <img src="https://source.unsplash.com/random/600x300/?halifax,donair,food" alt="Donair" class="w-full h-48 object-cover rounded-md mt-4">
+                </div>
+            </div>
+        </section>
+
+        <!-- Outdoors & Nature Section -->
+        <section id="outdoors" class="mb-12">
+            <h3 class="text-4xl font-semibold mb-8 section-title text-blue-700">Outdoors & Nature</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-6 transform hover:scale-105 transition duration-300">
+                    <h4 class="text-2xl font-bold mb-2 text-gray-900">Point Pleasant Park</h4>
+                    <p class="text-gray-700 mb-4">Explore miles of walking trails, historic ruins, and beautiful ocean views in this large forested park at the south end of the Halifax peninsula.</p>
+                    <img src="https://source.unsplash.com/random/600x300/?point,pleasant,park,halifax" alt="Point Pleasant Park" class="w-full h-48 object-cover rounded-md mt-4">
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6 transform hover:scale-105 transition duration-300">
+                    <h4 class="text-2xl font-bold mb-2 text-gray-900">McNabs Island</h4>
+                    <p class="text-gray-700 mb-4">Take a ferry to this historic island in Halifax Harbour for hiking, exploring old forts, and enjoying pristine beaches.</p>
+                    <img src="https://source.unsplash.com/random/600x300/?mcnabs,island,halifax,ferry" alt="McNabs Island" class="w-full h-48 object-cover rounded-md mt-4">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="contact" class="bg-gray-800 text-white py-8 px-4 md:px-8 rounded-t-lg">
+        <div class="container mx-auto text-center">
+            <h4 class="text-2xl font-bold mb-4">Plan Your Halifax Adventure!</h4>
+            <p class="text-gray-400 mb-4">Have questions or need more recommendations? Feel free to reach out!</p>
+            <p class="text-gray-400">&copy; 2025 Discover Halifax. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
